@@ -1,0 +1,19 @@
+body, footer, p
+{
+	font-family: 'Raleway', sans-serif;
+}
+nav
+{
+	position: absolute;
+	top: 50px;
+	right: 78px;
+}
+
+h1
+{
+	font-family:'Raleway-VariableFont_wght' ;
+}
+.fas
+{
+	color: #0065FC;
+}
