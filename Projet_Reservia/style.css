@@ -33,12 +33,12 @@
 }
 /*Partie Header*/
 
-`.logo
+	.logo
 {
 	display: inline-block;
 	align-items: flex-start;
 }
-`.nav
+	.nav
 {
 	display: inline-block;
 	align-self: flex-end;
@@ -46,13 +46,13 @@
 
 /*Partie Recherche*/
 
-`.section_recherche_bloc2
+	.section_recherche_bloc2
 {
 	display: inline-flex;
 	flex-direction: row;
 }
 
-`.filtre1
+	.filtre1
 {
 	width: 125px;
 	border-radius: 10px;
