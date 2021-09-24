@@ -13,10 +13,18 @@
 {
 	font-size: 15px;
 }
-/* Couleur logo */
+/* logo */
 	.fas
 {
 	color: #0065FC;
+}
+
+	.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+	font-size: 15px;
+	border-radius: 5em;
+	background-color: #deebff;
+	padding: 15px;
 }
 
 /*Dimension des images et bloc*/
@@ -33,15 +41,11 @@
 }
 /*Partie Header*/
 
-	.logo
+	#header
 {
-	display: inline-block;
-	align-items: flex-start;
-}
-	.nav
-{
-	display: inline-block;
-	align-self: flex-end;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 /*Partie Recherche*/
@@ -52,11 +56,42 @@
 	flex-direction: row;
 }
 
+	#filtres
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
 	.filtre1
 {
-	width: 125px;
-	border-radius: 10px;
-	border-color: #F2F2F2;
+	margin-right: 5px;
+}
+
+	.filtre2
+{
+	margin-left: 5px;
+}
+
+	.filtre1, .filtre2, .filtre3, .filtre4
+{
+	display: inline-flex;
+	flex-direction: row;
+	border-radius: 2em solid #F2F2F2;
+}
+
+	#Recherche
+{
+	display: inline-flex;
+	flex-direction: row;
+	border-radius: 1em;
+}
+
+	.fa-map-marker-alt
+{
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	background-color: #F2F2F2;
 }
 /*Partie 1 : Hebergements a Marseille*/
 
