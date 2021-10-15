@@ -2,10 +2,13 @@
 
 	body
 {
-	font-family: Raleway, sans-serif;
+	font-family: 'Raleway', sans-serif;
+	width: 90rem;
+	height: auto;
+	background-color: white;
 }
 
-	p
+/*	p
 {
 	font-size: 15px;
 }
@@ -13,10 +16,15 @@
 {
 	font-size: 15px;
 }
-/* logo */
+ logo */
 	.fas
 {
 	color: #0065FC;
+}
+
+	.recherche.bloc2 i
+{
+	color: black;
 }
 
 	.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
@@ -28,12 +36,7 @@
 }
 
 /*Dimension des images et bloc*/
-	.flottant
-{
-	width: 12.5em;
-	height: 6.5em;
-	object-fit: cover;
-}
+
 	.flottant2
 {
 	width: 8.5em;
@@ -43,49 +46,116 @@
 
 	#header
 {
-	display: inline-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 90rem;
+	height: 6rem;
+}
+	.bloc_menu
+{
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	width: 6rem;
+	padding: 0.5rem 3rem 0 0;
+}
+
+	.bloc_menu ul
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 16rem;
+	font-size:1rem;
+	padding-top:1rem;
+}
+	li
+{
+	list-style: none;	
+}
+
+	.navigation.hebergement
+{
+	padding: 0 1.5rem 0 1rem;	
+}
+	.navigation.activitee
+{
+	padding: 0 2rem 0 2rem;
+}
+	.sinscrire
+{
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 2rem 1rem 0 0;
+	margin-left: 2.5rem;
+}
+	.sinscrire a
+{
+	color: #0065FC;
+}
+	.navigation.header:hover
+{
+	border-top: solid 0.2rem #0065FC;
+	padding-top: 2rem ;
+	color: #0065FC;
+}
+	.logo
+{
+	margin: 1rem 0 0 1rem;
+	width: 8.2rem;
+	height: 3.2rem;
+}
+a
+{
+	text-decoration: none;
+	color: initial; 
 }
 
 /*Partie Recherche*/
 
-	.section_recherche_bloc2
-{
-	display: inline-flex;
-	flex-direction: row;
-}
-
+	
 	#filtres
 {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	width: 58rem;
 }
-
-	.filtre1
-{
-	margin-right: 5px;
-}
-
-	.filtre2
-{
-	margin-left: 5px;
-}
-
-	.filtre1, .filtre2, .filtre3, .filtre4
+	.recherche.bloc2
 {
 	display: inline-flex;
 	flex-direction: row;
-	border-radius: 2em solid #F2F2F2;
+	border: 1px solid #d9d9d9;
+	border-radius: 6px;
+}
+	
+	.recherche.bloc2 label
+{
+	display: inline-block;
+	background-color: #d9d9d9;
+	align-items: center;
+	width: 3.12rem;
+}	
+	.recherche.bloc3
+{
+	display: flex;
+	flex-direction: row;
 }
 
-	#Recherche
+	.filtre span 
 {
-	display: inline-flex;
-	flex-direction: row;
-	border-radius: 1em;
+	padding: 0.5rem;
 }
+
+	.filtre.eco, .filtre.fam, .filtre.rom, .filtre.ani
+
+{
+	border: 2px solid #d9d9d9;
+	border-radius: 2rem;
+	justify-content: space-between;
+	margin: 0.5rem;
+}	
 
 	.fa-map-marker-alt
 {
@@ -99,26 +169,27 @@
 {
 	display: flex;
 	flex-wrap: wrap;
-	width: 45em;
-	height: 40em;
+	width: 55rem;
 	align-content: space-between;
 	text-align: center;
 	background-color: #F2F2F2;
 	border-radius: 1em;
 }
 
-	.flottant
+	article .flottant 
 {
 	display: inline-block;
 	border-top-left-radius: 1em ;
 	border-top-right-radius: 1em;
+	width: 15rem;
+	height: 7rem;
+	object-fit: cover;
 }
 
-	.hotel_hebergements
+	#bloc_hebergements article
 {
-	display: inline;
-	width: 12.5em;
-	height: 12em;
+	display: flex;
+	width: 16rem;
 	border-radius: 1em;
 	background-color: white;
 	box-shadow:0px 0px 1px #333333;
@@ -131,21 +202,44 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
 }
 
+	#bloc_hebergements h2, a
+{
+	padding-left: 2.5rem;
+	padding-right: 2,5rem;
+}
+
+	#bloc_hebergements h2
+{
+	padding-top: 3.2rem;
+	padding-bottom: 1.8rem;
+}
+
+	#bloc_hebergements a
+{
+	padding-bottom: 3.2rem;
+	padding-top: 2.5rem;
+}
 /*Partie 2 : Les plus populaires*/
 	#bloc_populaires
 {
 	display: flex;
 	flex-wrap: wrap;
-	width: 30em;
-	height: 40em;
+	width: 26.5rem;
+	height: 38.75rem;
 	text-align: center;
 	background-color: #F2F2F2;
 	border-radius: 1em;
 }
 	.hotel_populaire
 {
+	display: inline-block;
+	width: 21.5rem;
+	height: 9.2rem;
 	border-radius: 1em;
 	background-color: white;
 }	
@@ -160,19 +254,99 @@
 
 	#titre_populaire_logo
 {
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-top: 3.2rem;
+	padding-bottom: 1.8rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 }
 
 /*Partie 3 : Les Activites*/
 
-	.flottant3
+	.activite.port 
 {
+	height: 27.8rem;
+	width: 19rem;
+}
+
+	.activite.port img
+{
+	height: 24.3rem;
+	width: 18.75rem;
 	border-top-left-radius: 1em;
 	border-top-right-radius: 1em;
 }
-	.les_activites
+	.activite.fort img
+{
+	height: 11.25rem;
+	width: 18.75rem;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+	.activite.iles img
+{
+	height: 6.9rem;
+	width: 18.75rem;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+	.activite.calanques img
+{
+	height: 24.3rem;
+	width: 18.75rem;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+	.activite.notredame img
+{
+	height: 8.75rem ;
+	width: 18.75rem;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+	.activite.parc img
+{
+	height: 8.75rem;
+	width: 18.75rem;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+	.activite.fort 
+{
+	height: 15rem;
+	width: 18.75rem;
+}
+	.activite.iles 
+{
+	height: 10.3rem;
+	width: 18.75rem;
+}
+	.activite.calanques 
+{
+	height: 19rem;
+	width: 18.75rem;
+}
+	.activite.notredame 
+{
+	height: 12.1rem ;
+	width: 18.75rem;
+}
+	.activite.parc 
+{
+	height: 12.1rem;
+	width: 18.75rem;
+}
+	.activite img
+{
+	object-fit: cover;
+}
+
+
+
+	.activite
 {
 	border-radius: 1em;
 	box-shadow:0px 0px 2px #333333
@@ -187,7 +361,7 @@
 	align-items: flex-end;
 	align-content: space-between;	
 	background-color: #F2F2F2;
-	width: 100%;
+	width: 1440px;
 	height: 10em;
 }
 
@@ -203,4 +377,6 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
 }

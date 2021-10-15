@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head lang="fr">
 		<meta charset="utf-8">
+		<meta name="description" content="Bienvenue sur Réservia"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
-		</style>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<script src="https://kit.fontawesome.com/7100531c0c.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
 		<title>Reservia</title>
 	</head>
 	
 	<body>
-	<div id="bloc_complet">
-		<header><section id="header">
+		<header id="header">
 
-			<a class= logo href="images/logo/Reservia.svg"></a><img src="images/logo/Reservia.svg" alt="logo"> 	<!---Logo Reservia--->	
+		<div> <a href="#" ><img class="logo" src="images/logo/Reservia.svg" alt="logo"/></a></div> 	<!---Logo Reservia--->	
 			
+		<div class="bloc_menu">
 			<nav class="nav">	
-				 <a href="#bloc_hebergements" class="navigation header"> <p>Hebergements</p></a>
-				 <a href="#bloc_activites" class="navigation header">Activites</a>
-				 <a href="#" class="navigation header">S'inscrire</a>
+				<ul>
+				 <li><a href="#bloc_hebergements" class="navigation header hebergement"> Hebergements</a></li>
+				 <li><a href="#bloc_activites" class="navigation header activitee">Activites</a></li>
+				 <!--<a href="#" class="navigation header">S'inscrire</a>-->
+				 </ul>
 			</nav>
-		</section></header>
+			 <div class="sinscrire "><a class="" href="#">S'inscrire</a></div>
+		</div>
+		
+		</header>
+
 
 		<main id="bloc_principal"> 
 
@@ -29,32 +36,28 @@
 		
 			<section id="section_recherche">
 
-				<div class="section_recherche_bloc1">
+				<div class="recherche bloc1">
 					
 					
 					<h1>Trouvez votre hébergement pour des vacances de reve</h1>		
 					<p>En plein centre-ville ou pleine nature</p>
 				</div>
 
-				<div class="section_recherche_bloc2">
-					<div id="Recherche">
+				<div class="recherche bloc2">
 						<label for="ville"><i class="fas fa-map-marker-alt"></i></label>
 						<input type="search" name="ville" id="ville" value="Marseille, France">
 						<p>Rechercher</p>
-					</div>
 				</div>
 
-				<div class="section_recherche_bloc3">
+				<div class="recherche bloc3">
 						<h3>Filtres</h3>
-							<div id="filtres">
-								<div class="filtre1"><i class="fas fa-money-bill-wave"></i>Economique</div>
-								<div class="filtre2"><i class="fas fa-child"></i>Familial</div>
-								<div class="filtre3"><i class="fas fa-heart"></i>Romantique</div>
-								<div class="filtre4"><i class="fas fa-dog"></i>Animaux autorisé</div>
-							</div>   
+							<div class="filtre eco"><i class="fas fa-money-bill-wave"></i><span class="econ">Economique</span></div>
+							<div class="filtre fam"><i class="fas fa-child"></i><span class="fami">Familial</span></div>
+							<div class="filtre rom"><i class="fas fa-heart"></i><span class="roma">Romantique</span></div>
+							<div class="filtre ani"><i class="fas fa-dog"></i><span class="anim">Animaux autorisé</span></div> 
 				</div>
 
-				<div class="section_recherche_bloc4">
+				<div class="recherche bloc4">
 					<p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
 				</div>
 
@@ -71,7 +74,7 @@
 					<section id="bloc_hebergements">	
 						
 						
-						<h2 id="titre_bloc_hebergements">Hébergements a Marseille</h2><br>
+						<h2>Hébergements a Marseille</h2><br>
 						
 						<div id="flex_hebergements">
 						
@@ -130,7 +133,7 @@
 					<section id="bloc_populaires">	
 						
 							<div id="titre_populaire_logo"> 
-							<h2 id="titre_bloc_populaires">Les plus populaires</h2> 
+							<h2>Les plus populaires</h2> 
 					
 							<div><i class="fas fa-chart-line"></i></div> <!--- logo --->
 							</div>
@@ -169,28 +172,28 @@
 
 							<h2 id="titre_bloc_activites">Activites a Marseille</h2>
 
-							<article class="les_activites">
+							<article class="activite port">
 								<figure>
-									<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="flottant3">
+									<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="flottant3 port">
 									<figcaption><h3>Vieux Port</h3></figcaption>
 								</figure>
 							</article>
 					
-							<article class="les_activites">
+							<article class="activite fort">
 								<figure>
 									<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomegues" class="flottant3">
 									<figcaption><h3>Fort de Pomegues</h3></figcaption>
 								</figure>
 							</article>
 
-							<article class="les_activites">	
+							<article class="activite iles">	
 								<figure>
 									<img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul" class="flottant3">
 									<figcaption><h3>Iles du Frioul</h3></figcaption>
 								</figure>
 							</article>
 
-							<article class="les_activites">
+							<article class="activite calanques">
 								<figure>
 									<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="flottant3">
 									<figcaption><h3>Parc National des Calanques</h3></figcaption>
@@ -198,14 +201,14 @@
 							</article>
 
 							<article>
-								<figure class="les_activites">
+								<figure class="activite notredame">
 									<img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="flottant3">
 									<figcaption><h3>Notre-Dame-de-la-Garde</h3></figcaption>
 								</figure>
 							</article>
 						
 							<article>
-								<figure class="les_activites">
+								<figure class="activite parc">
 									<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="flottant3">
 									<figcaption><h3>Parc Longchamp</h3></figcaption>
 								</figure>
@@ -214,7 +217,7 @@
 					</section>
 				</section>
 		</main>
-	</div>
+	
 
 		<footer>
 
