@@ -135,7 +135,7 @@ li {
 	flex-direction: row;
 	width: 58rem;
 }
-	.recherche.bloc2
+	.barre_de_recherche
 {
 	display: flex;
 	justify-content: flex-start;
@@ -144,7 +144,7 @@ li {
 	height: 3rem;
 }
 	
-	.recherche.bloc2 label
+	.barre_de_recherche label
 {
 	display: flex;
 	background-color: #F2F2F2;
@@ -154,23 +154,23 @@ li {
 	border-radius: 12px 0px 0px 12px;
 }	
 
-	.recherche.bloc2 i
+	.barre_de_recherche i
 {
 	margin: 1.5rem;
 }
 
-	.recherche.bloc2 span
+	.barre_de_recherche span
 {
 	background-color: #0065fc;
 	border-radius: 0px 12px 12px 0px;
 }
 
-	.recherche.bloc2 input
+	.barre_de_recherche input
 {
 	border: 5px solid #F2F2F2;
 }
 
-	.recherche.bloc2 p
+	.barre_de_recherche p
 {
 	color: white;
 	margin-left: 0.31rem;
@@ -180,6 +180,7 @@ li {
 	.searchicone
 {
 	display: none;
+	color: white;
 }
 
 	.filtre span 
@@ -253,6 +254,7 @@ li {
   margin-right: 20px;
   margin-top: 30px;
   font-weight: bold;
+  align-items: center;
 }
 
 	#filtres h3
@@ -322,6 +324,7 @@ li {
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 30px;
+  justify-content: space-between;
 }
 
 	.ligne2_hebergement
@@ -329,6 +332,7 @@ li {
   display: flex;
   margin-left: 25px;
   margin-right: 25px;
+  justify-content: space-between;
 }
 
 	.hotel_hebergements 
@@ -369,7 +373,10 @@ li {
   margin-top: 40px;
 }
 
-	
+	#bloc_hebergement_populaire
+{
+	display: flex;
+}	
 
 /*Partie 2 : Les plus populaires*/
 	
@@ -575,9 +582,8 @@ li {
 	align-items: center;
 	justify-content: space-around;	
 	background-color: #F2F2F2;
-	width: 100%;
 	height: 220px;
-	font-size: 1em;
+	font-size: small;
 	margin-top: 60px;
 }
 
@@ -636,7 +642,7 @@ li {
   align-items: center;
   height: 220px;
   line-height: 30px;
-  font-size: 1em;
+  font-size: small;
 	}
   
 		.footer.ft1 
@@ -992,7 +998,7 @@ li {
   {
     position: absolute;
     top: 33px;
-    left: 88%;
+    left: 90%;
     right: 20%;
   }
 
@@ -1002,6 +1008,16 @@ li {
     margin: 0;
     padding-top: 25px;
     text-align: center;
+  }
+
+  	#filtres.recherche.bloc3
+  {
+  	width: 100%;
+  }
+
+  	#nav_bar.nav_bar
+  {
+  	width: 100%;
   }
 
   	.line_blue , .txt_grey
@@ -1026,6 +1042,7 @@ li {
     display: none;
   }
 
+
   /*Baseline*/
 
 
@@ -1037,21 +1054,21 @@ li {
   }
 
   	.recherche.bloc1 p
-   {
+  {
     margin-bottom: 20px;
     padding-left: 20px;
   }
 
+
   /*Champ de recherche*/
 
-  	.recherche.bloc2 span 
+  	.barre_de_recherche span 
   {
     margin-left: 20px;
   }
 
-  	.recherche.bloc2 input 
+  	.barre_de_recherche input 
   {
-    height: 46px;
     width: 280px;
   }
 
@@ -1060,13 +1077,13 @@ li {
     display: none;
   }
 
-  	.recherche.bloc2 .searchicone 
+  	.barre_de_recherche .searchicone 
   {
     display: inline-block;
     margin-left: 0px;
   }
 
-  	.recherche.bloc2 button 
+  	.barre_de_recherche button 
   {
     width: 46px;
     height: 46px;
@@ -1075,8 +1092,13 @@ li {
     line-height: 5px;
     font-size: 15px;
     margin-left: -41px;
+    color: white;
   }
 
+  	.barre_de_recherche
+  {
+  	margin-left: 2%;
+  }
   /*Filtres*/
 
   	#filtres 
@@ -1108,6 +1130,7 @@ li {
     margin-left: 20px;
     margin-top: 23px;
     margin-bottom: 10px;
+    align-items: baseline;
   }
 
   	.recherche.bloc4 span 
@@ -1127,7 +1150,7 @@ li {
 
   /*Hébergement et Populaire*/
 
-  	.bloc_hebergement_populaire 
+  	#bloc_hebergement_populaire 
   {
     display: flex;
     flex-direction: column;
@@ -1146,12 +1169,10 @@ li {
 
   	.bloc_hebergements 
   {
-    display: flex;
-    flex-direction: column;
-    height: 1400px;
-    /*width: 100%;*/
-    margin-bottom: 20px;
-    height: 640px;
+		height: 570px;
+		margin-bottom: 50px;
+		width: 100%;
+		margin-left: 1%;  
   }
 
   	.ligne1_hebergement 
@@ -1170,19 +1191,20 @@ li {
   	.hotel_hebergements 
   {
     width: 330px;
-    height: 230px;
+    height: 180px;
     margin-left: 0px;
     box-shadow: 10px 10px 10px #f2f2f2;
   }
 
   	.sous_image 
   {
-    line-height: 8px;
+    line-height: 6px;
+    font-size: small;
   }
 
   	.hebergement_link 
   {
-    margin-top: 15px;
+    margin-top: 35px;
     margin-left: 20px;
   }
 
@@ -1191,11 +1213,10 @@ li {
   	aside 
   {
     display: block;
-    width: 100%;
+    width: 85%;
     height: 765px;
     background-color: #f2f2f2;
-    border: none;
-    border-radius: 0px;
+    margin: 0% 9% 1% 9%;
   }
 
   	aside h2 
@@ -1239,8 +1260,9 @@ li {
   	.box_activity 
   {
     display: block;
-    padding-left: 20px;
     height: 1515px;
+    width: 100%;
+    padding-left: 2%;
   }
 
   	.deux_colonnes 
@@ -1391,11 +1413,16 @@ li {
     display: block;
     margin-top: 0px;
   }
+
+  	.sous_image
+  {
+  	font-size: medium;
+  }
 }
 
 /*Mobile L*/
 
-@media only screen and (max-width: 425px) 
+@media only screen and (max-width: 430px) 
 
 {  
   /*Main*/
@@ -1408,6 +1435,11 @@ li {
   }
 
   /*Header*/
+
+  	header.topbar 
+  {
+    width: 325px;
+	}
 
   	.topbar 
   {
@@ -1432,7 +1464,7 @@ li {
   {
     position: absolute;
     top: 33px;
-    left: 330px;
+    left: 324px;
     right: 50px;
   }
 
@@ -1474,6 +1506,7 @@ li {
     margin-top: 35px;
     padding-left: 20px;
     padding-right: 60px;
+    font-size: initial;
   }
 
   	.recherche.bloc1 p 
@@ -1610,7 +1643,7 @@ li {
 
   	.hotel_hebergements 
   {
-    width: 93%;
+    width: 100%;
     height: 290px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1621,6 +1654,7 @@ li {
   	.sous_image 
   {
     line-height: 8px;
+    font-size: large;
   }
 
   	.hebergement_link 
@@ -1633,11 +1667,12 @@ li {
   	aside 
   {
     display: block;
-    width: 100%;
-    height: 540px;
+    width: 108%;
+    height: 580px;
     background-color: #f2f2f2;
     border: none;
     border-radius: 0px;
+    margin-left: 0px;
   }
 
   	aside h2 
@@ -1648,7 +1683,7 @@ li {
     background-color: #f2f2f2;
   }
 
-  	#titre_populaire_logo 
+  	.titre_populaire_logo 
   {
     display: flex;
     justify-content: space-between;
@@ -1687,7 +1722,8 @@ li {
   {
     display: block;
     height: 1255px;
-    padding-left: 20px;
+    width: 100%;
+    margin: 2.5%;
   }
 
   	.deux_colonnes 
@@ -1795,14 +1831,20 @@ li {
   	footer 
   {
     display: block;
-    height: 450px;
+    width: 108%;
+    height: auto;
     margin-top: 25px;
+    padding-left: 32%;
+    padding-bottom: 2%;
   }
+
 }
 
 /*Mobile M*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 380px) 
+
+{
   
 	/*Header*/
 
@@ -1810,7 +1852,7 @@ li {
   {
     position: absolute;
     top: 33px;
-    left: 75%;
+    left: 82%;
     right: 50px;
   }
 
@@ -1823,21 +1865,21 @@ li {
 
   	aside 
   {
-    width: 100%;
+    width: 110%;
   }
 
   /*Hebergement*/
 
   	.hotel_hebergements 
   {
-    width: 94%;
+    width: 100%;
   }
 
   /*Activity*/
 
   	.media_activite_hauteur 
   {
-    width: 335px;
+    width: 100%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -1850,7 +1892,7 @@ li {
   
   	.media_activite_mediumlarg 
   {
-    width: 335px;
+    width: 100%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -1863,7 +1905,7 @@ li {
   
   	.media_activite_largeur_frioul 
   {
-    width: 335px;
+    width: 102%;
     height: 190px;
     margin-bottom: 20px;
     margin-top: 0px;
@@ -1877,7 +1919,7 @@ li {
   
   	.media_activite_larg_dame 
   {
-    width: 335px;
+    width: 100%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -1890,7 +1932,7 @@ li {
   
   	.media_activite_mediumlarg_long 
   {
-    width: 335px;
+    width: 100%;
     height: 190px;
   }
   	
@@ -1903,13 +1945,13 @@ li {
 
 /*Mobile S*/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 325px) {
   
   	header .txt_bold 
   {
     position: absolute;
     top: 33px;
-    left: 240px;
+    left: 256px;
     right: 50px;
   }
 
@@ -1923,7 +1965,7 @@ li {
   	aside 
   {
     display: block;
-    width: 100%;
+    width: 108%;
     height: 540px;
     background-color: #f2f2f2;
     border: none;
@@ -1942,14 +1984,14 @@ li {
 
   	.hotel_hebergements
   {
-    width: 95%;
+    width: 100%;
   }
 
   /*Activity*/
 
   	.media_activite_hauteur 
   {
-    width: 277px;
+    width: 100%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -1962,7 +2004,7 @@ li {
   
   	.media_activite_mediumlarg 
   {
-    width: 277px;
+    width: 100%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -1975,7 +2017,7 @@ li {
   
   	.media_activite_largeur_frioul 
   {
-    width: 277px;
+    width: 100%;
     height: 190px;
     margin-bottom: 20px;
     margin-top: 0px;
@@ -1989,7 +2031,7 @@ li {
   
   	.media_activite_larg_dame 
   {
-    width: 277px;
+    width: 100%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -2002,7 +2044,7 @@ li {
   
   	.media_activite_mediumlarg_long 
   {
-    width: 277px;
+    width: 100%;
     height: 190px;
   }
   
